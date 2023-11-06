@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Personal Info</title>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align:center">Personal Information Details</h2>
+    </div>
+    <br>
+    <div class="container">
+    <table>
+        <tr>
+            <td><h4>&emsp;<b>Name</b></h4></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&emsp;<label for="firstName">Enter First Name: </label></td>
+            <td>&emsp;<label for="lastName">Enter Last Name: </label></td>
+        </tr>
+        <tr>
+            <td>&emsp;<input type="text" id="firstName" /></td>
+            <td>&emsp;<input type="text" id="lastName" /></td></td>
+        </tr>
+        <tr>
+            <td>&emsp;&nbsp;<span id="erra" style="color:red"></span></td>
+            <td>&emsp;&nbsp;<span id="errb" style="color:red"></span></td>
+        </tr>
+    </table>
+    </div>
+    <br>
+    <div class="container">
+    <table>
+        <tr>
+            <td><h4>&emsp;<b>Phone Number</b></h4></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&emsp;<label for="code">Choose Country:&emsp;</label></td>
+            <td>&emsp;&emsp;<label for="phNum">Enter Number: </label></td>
+        </tr>
+        <tr>
+            <td>&emsp;&ensp;<select countryCode="code" id="code">
+                <option value="[None Selected]">Select code</option>
+                <option value="+91">India</option>
+                <option value="+1">USA</option>
+                <option value="+44">UK</option>
+                <option value="+86">China</option>
+                </select>
+            </td>
+            <td>&emsp;&emsp;<input type="tel" id="phNum" pattern="[0-9]{10}" required /></td>
+        </tr>
+        <tr>
+            <td>&emsp;&nbsp;<span id="errc" style="color:red"></span></td>
+            <td>&emsp;&emsp;&nbsp;<span id="errd" style="color:red"></span></td>
+        </tr>
+    </table>
+    </div>
+    <br>
+    <div class="container">
+    <table>
+        <tr>
+            <td><label for="dob"><b><h4>&emsp;Select DOB</b></h4></label></td>
+        </tr>
+        <tr>
+            <td>&emsp;<input type="date" id="dob" /></td>
+        </tr>
+        <tr>
+            <td>&emsp;&nbsp;<span id="erre" style="color:red"></span></td>
+        </tr>
+    </table>
+    </div>
+    <br>
+    <div class="container">
+    <table>
+        <tr>
+            <td><h4>&emsp;<b>Select Gender</b></h4></td>
+        </tr>
+        <tr>
+            <td>&emsp;<label for="gender">&emsp;&emsp;</label>
+                <input type="radio" name="gender" value="Male">Male
+                <label for="gender">&emsp;&emsp;</label>
+                <input type="radio" name="gender" value="Female">Female
+                <label for="gender">&emsp;&emsp;</label>
+                <input type="radio" name="gender" value="Others">Others
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&emsp;&nbsp;<span id="errf" style="color:red"></span></td>
+        </tr>
+    </table>
+    </div>
+    <br>
+    <div class="container">
+        <h4>&emsp;Academic Details</h4>
+        <table>
+            <tr>
+                <th style="text-align:center">Qualification</th>
+                <th style="text-align:left">Marks Obtained</th>
+                <th style="text-align:left">Passed out Year</th>
+                <th style="text-align:left">Institution Name</th>
+            </tr>
+          
+            <tr>
+              <td style="text-align:center"><b>10<sup>th</sup></b></td>
+              <td><label for="tenMark"></label>
+              <input type="number" id="tenMark" min="0" max="500"/></td>
+              <td><label for="tenPassYr"></label>
+              <input type="number" id="tenPassYr" min="1900" max="2023"/> </td>
+              <td><label for="tenSklName"></label>
+              <input type="text" id="tenSklName" /></td>
+            </tr>
+          
+            <tr>
+              <td></td>
+              <td>&nbsp;<span id="err1a" style="color:red"></span></td>
+              <td>&nbsp;<span id="err1b" style="color:red"></span></td>
+              <td>&nbsp;<span id="err1c" style="color:red"></span></td>
+            </tr>
+          
+            <tr>
+              <td style="text-align:center"><b>12<sup>th</sup></b></td>
+              <td><label for="twMark"></label>
+              <input type="number" id="twMark" min="0" max="600"/> </td>
+              <td><label for="twPassYr"></label>
+              <input type="number" id="twPassYr" min="1900" max="2023"/> </td>
+              <td><label for="twSklName"></label>
+              <input type="text" id="twSklName" /></td>
+            </tr>
+          
+            <tr>
+              <td></td>
+              <td>&nbsp;<span id="err2a" style="color:red"></span></td>
+              <td>&nbsp;<span id="err2b" style="color:red"></span></td>
+              <td>&nbsp;<span id="err2c" style="color:red"></span></td>
+            </tr>
+          
+            <tr>
+              <td style="text-align:center"><b>College</b></td>
+              <td><label for="clgMark"></label>
+              <input type="number" id="clgMark" min="0" max="10"/> </td>
+              <td><label for="clgPassYr"></label>
+              <input type="number" id="clgPassYr" min="1900" max="2023"/></td>
+              <td><label for="clgName"></label>
+              <input type="text" id="clgName" /></td>
+            </tr>
+          
+            <tr>
+              <td></td>
+              <td>&nbsp;<span id="err3a" style="color:red"></span></td>
+              <td>&nbsp;<span id="err3b" style="color:red"></span></td>
+              <td>&nbsp;<span id="err3c" style="color:red"></span></td>
+            </tr>
+          
+          </table> 
+        <br><span>&nbsp;</span><span id="errg" style="color:red"></span> 
+    </div>
+    <br><br>
+    <button class="submit" id="submit" type="button" onclick="submit()">Submit</button>
+    <br><br>
+    <div class="container">
+    <h2 style="text-align:center">Output</h2>
+        <p id="output1"></p>
+        <p id="output2"></p>
+        <p id="output6"></p>
+        <p id="output19"></p>
+
+        <h4 id="output12"></h4>
+        <p id="output3"></p>
+        <p id="output4"></p>
+        <p id="output5"></p>
+        <p id="output7"></p>
+
+        <h4 id="output13"></h4>
+        <p id="output8"></p>
+        <p id="output9"></p>
+        <p id="output10"></p>
+        <p id="output11"></p>
+
+        <h4 id="output14"></h4>
+        <p id="output15"></p>
+        <p id="output16"></p>
+        <p id="output17"></p>
+        <p id="output18"></p>
+    </div>
+
+    <!-- <script>
+
+        function submit() {
+           let FirName = document.getElementById("firstName").value;
+           let LstName = document.getElementById("lastName").value;
+            if(FirName == "" && LstName == "")
+            {document.getElementById("erra").innerHTML = "Invalid Input. Kindly Enter First Name.";
+             document.getElementById("errb").innerHTML = "Invalid Input. Kindly Enter Last Name.";}
+            else{
+                if(FirName == "")
+                { document.getElementById("erra").innerHTML = "Invalid Input. Kindly Enter First Name.";}
+                else if(LstName == "")
+                { document.getElementById("errb").innerHTML = "Invalid Input. Kindly Enter Last Name.";}
+                else
+                   {document.getElementById("output1").innerHTML = "Name : " + FirName + " " + LstName;}
+            }
+           let Code = document.getElementById("code").value;
+           let Number = document.getElementById("phNum").value;
+            if(Number<=999999999 || Code == "[None Selected]") {
+                document.getElementById("errd").innerHTML = "Invalid Input. Kindly Resubmit Phone Number.";
+                document.getElementById("errc").innerHTML = "Invalid Input. Kindly Enter Country Code.";
+            }
+            else if(Number<=999999999) {
+                document.getElementById("errd").innerHTML = "Invalid Input. Kindly Resubmit Phone Number.";}
+            else if(Code == "[None Selected]") {
+                document.getElementById("errc").innerHTML = "Invalid Input. Kindly Enter Country Code.";}
+            else 
+              {document.getElementById("output2").innerHTML = "Phone Number : " + Code + " " + Number;}
+           
+
+            const dateControl = document.getElementById("dob").value;
+            if(dateControl == ""){
+                document.getElementById("erre").innerHTML = "Invalid Input. Kindly Enter Date of Birth.";
+            }
+            else {
+                document.getElementById("output6").innerHTML = "DOB : " + dateControl;
+            }
+            
+
+
+           var ele = document.getElementsByName('gender');
+                    for (i = 0; i < ele.length; i++) {
+                        if (ele[i].checked)
+                            {document.getElementById("output19").innerHTML
+                                = "Gender: " + ele[i].value;}
+                        else if (ele[i].checked == false) {
+                            document.getElementById("errf").innerHTML = "Invalid Input. Kindly Select Gender.";
+                        }
+                    }
+                    
+        
+           let TenMark = document.getElementById("tenMark").value;
+           let TenPer = TenMark/5;
+           let TenPassYr = document.getElementById("tenPassYr").value;
+           let TenSklName = document.getElementById("tenSklName").value;
+           document.getElementById("output12").innerHTML = "10 details";
+        if(TenMark == "" && TenPassYr == "" && TenSklName == "") 
+        {document.getElementById("output3").innerHTML = "Details Not Entered";}
+        else {
+            if(TenMark == ""){
+                document.getElementById("err1a").innerHTML = "Enter Marks.";
+                if(TenPassYr == ""){
+                    document.getElementById("err1b").innerHTML = "Enter Passout Year.";}
+                else if(TenSklName == ""){
+                    document.getElementById("err1c").innerHTML = "Enter Institution Name.";}
+            }
+            else if(TenPassYr == ""){
+                document.getElementById("err1b").innerHTML = "Enter Passout Year.";
+                if(TenSklName == ""){
+                    document.getElementById("err1c").innerHTML = "Enter Institution Name.";}
+            }
+            else if(TenSklName == ""){
+                document.getElementById("err1c").innerHTML = "Enter Institution Name.";}
+            else{
+                document.getElementById("output3").innerHTML = "Total Marks : " + TenMark;
+                   document.getElementById("output4").innerHTML = "Total Percentage : " + TenPer + "%";
+                   document.getElementById("output5").innerHTML = "Year Passed Out : " + TenPassYr;
+                   document.getElementById("output7").innerHTML = "School Name : " + TenSklName;}
+        
+            
+        }	
+        
+           let TwMark = document.getElementById("twMark").value;
+           let TwPer = TwMark/6;
+           let TwPassYr = document.getElementById("twPassYr").value;
+           let TwSklName = document.getElementById("twSklName").value;
+           document.getElementById("output13").innerHTML = "12 details";
+        if(TwMark == "" && TwPassYr == "" && TwSklName == "") 
+        {document.getElementById("output8").innerHTML = "Details Not Entered";}
+        else {
+            if(TwMark == ""){
+                document.getElementById("err2a").innerHTML = "Enter Marks.";
+                if(TwPassYr == ""){
+                    document.getElementById("err2b").innerHTML = "Enter Passout Year.";}
+                else if(TwSklName == ""){
+                    document.getElementById("err2c").innerHTML = "Enter Institution Name.";}
+            }
+            else if(TwPassYr == ""){
+                document.getElementById("err2b").innerHTML = "Enter Passout Year.";
+                if(TwSklName == ""){
+                    document.getElementById("err2c").innerHTML = "Enter Institution Name.";}
+            }
+            else if(TwSklName == ""){
+                document.getElementById("err2c").innerHTML = "Enter Institution Name.";}
+            else{
+                document.getElementById("output8").innerHTML = "Total Marks : " + TwMark;
+                   document.getElementById("output9").innerHTML = "Total Percentage : " + TwPer + "%";
+                   document.getElementById("output10").innerHTML = "Year Passed Out : " + TwPassYr;
+                   document.getElementById("output11").innerHTML = "School Name : " + TwSklName;}
+        }
+        
+           let ClgMark = document.getElementById("clgMark").value;
+           let ClgPer = ClgMark*10;
+           let ClgPassYr = document.getElementById("clgPassYr").value;
+           let ClgName = document.getElementById("clgName").value;
+           document.getElementById("output14").innerHTML = "College details";
+        if(ClgMark == "" && ClgPassYr == "" && ClgName == "") 
+        {document.getElementById("output15").innerHTML = "Details Not Entered";}
+        else {
+            if(ClgMark == ""){
+                document.getElementById("err3a").innerHTML = "Enter Marks.";
+                if(ClgPassYr == ""){
+                    document.getElementById("err3b").innerHTML = "Enter Passout Year.";}
+                else if(ClgName == ""){
+                    document.getElementById("err3c").innerHTML = "Enter Institution Name.";}
+            }
+            else if(ClgPassYr == ""){
+                document.getElementById("err3b").innerHTML = "Enter Passout Year.";
+                if(ClgName == ""){
+                    document.getElementById("err3c").innerHTML = "Enter Institution Name.";}
+            }
+            else if(ClgName == ""){
+                document.getElementById("err3c").innerHTML = "Enter Institution Name.";}
+            else{
+                document.getElementById("output15").innerHTML = "Total Marks : " + ClgMark;
+                   document.getElementById("output16").innerHTML = "Total Percentage : " + ClgPer + "%";
+                   document.getElementById("output17").innerHTML = "Year Passed Out : " + ClgPassYr;
+                   document.getElementById("output18").innerHTML = "College Name : " + ClgName;}
+        }
+        if(TenMark == "" && TenPassYr == "" && TenSklName == "" && TwMark == "" && TwPassYr == "" && TwSklName == "" && ClgMark == "" && ClgPassYr == "" && ClgName == ""){
+            document.getElementById("errg").innerHTML = "Enter Atleast One Field.";
+        }
+        }
+    </script> -->
+
+<script>
+function submit() {      
+            
+    let ClgMark = document.getElementById("clgMark").value;
+    let ClgPer = ClgMark*10;
+    let ClgPassYr = document.getElementById("clgPassYr").value;
+    let ClgName = document.getElementById("clgName").value;
+    document.getElementById("output14").innerHTML = "College details";
+    if(ClgMark == "" && ClgPassYr == "" && ClgName == "") {
+        document.getElementById("output15").innerHTML = "Details Not Entered";
+    }
+    else {
+        if(ClgMark == ""){
+            document.getElementById("err3a").innerHTML = "Enter Marks.";
+            if(ClgPassYr == ""){
+                document.getElementById("err3b").innerHTML = "Enter Passout Year.";}
+            else if(ClgName == ""){
+                document.getElementById("err3c").innerHTML = "Enter Institution Name.";}
+        }
+        else if(ClgPassYr == ""){
+            document.getElementById("err3b").innerHTML = "Enter Passout Year.";
+            document.getElementById("err3a").innerHTML = "";
+            if(ClgName == ""){
+                document.getElementById("err3c").innerHTML = "Enter Institution Name.";
+                document.getElementById("err3a").innerHTML = "";
+            }
+        }
+        else if(ClgName == ""){
+            document.getElementById("err3c").innerHTML = "Enter Institution Name.";
+            document.getElementById("err3a").innerHTML = "";
+            document.getElementById("err3b").innerHTML = "";
+        }
+        else {
+            document.getElementById("output15").innerHTML = "Total Marks : " + ClgMark;
+            document.getElementById("output16").innerHTML = "Total Percentage : " + ClgPer + "%";
+            document.getElementById("output17").innerHTML = "Year Passed Out : " + ClgPassYr;
+            document.getElementById("output18").innerHTML = "College Name : " + ClgName;
+            document.getElementById("err3c").innerHTML = "";
+            document.getElementById("err3a").innerHTML = "";
+            document.getElementById("err3b").innerHTML = "";
+        }
+        if(ClgName == "") {
+            document.getElementById("clgName").focus();
+        }
+        if(ClgPassYr == "") {
+            document.getElementById("clgPassYr").focus();
+        }
+        if(ClgMark == "") {
+            document.getElementById("clgMark").focus();
+        }
+    }
+
+    let TwMark = document.getElementById("twMark").value;
+    let TwPer = TwMark/6;
+    let TwPassYr = document.getElementById("twPassYr").value;
+    let TwSklName = document.getElementById("twSklName").value;
+    document.getElementById("output13").innerHTML = "12 details";
+    if(TwMark == "" && TwPassYr == "" && TwSklName == "") {
+        document.getElementById("output8").innerHTML = "Details Not Entered";
+    }
+    else {
+        if(TwMark == ""){
+            document.getElementById("err2a").innerHTML = "Enter Marks.";
+            if(TwPassYr == ""){
+                document.getElementById("err2b").innerHTML = "Enter Passout Year.";}
+            else if(TwSklName == ""){
+                document.getElementById("err2c").innerHTML = "Enter Institution Name.";}
+        }
+        else if(TwPassYr == ""){
+            document.getElementById("err2b").innerHTML = "Enter Passout Year.";
+            document.getElementById("err2a").innerHTML = "";
+            if(TwSklName == ""){
+                document.getElementById("err2c").innerHTML = "Enter Institution Name.";
+                document.getElementById("err2a").innerHTML = "";
+            }
+        }
+        else if(TwSklName == ""){
+            document.getElementById("err2c").innerHTML = "Enter Institution Name.";
+            document.getElementById("err2a").innerHTML = "";
+            document.getElementById("err2b").innerHTML = "";
+        }
+        else{
+            document.getElementById("output8").innerHTML = "Total Marks : " + TwMark;
+            document.getElementById("output9").innerHTML = "Total Percentage : " + TwPer + "%";
+            document.getElementById("output10").innerHTML = "Year Passed Out : " + TwPassYr;
+            document.getElementById("output11").innerHTML = "School Name : " + TwSklName;
+            document.getElementById("err2a").innerHTML = "";
+            document.getElementById("err2b").innerHTML = "";
+            document.getElementById("err2c").innerHTML = "";
+        }
+        if(TwSklName == "") {
+            document.getElementById("twSklName").focus();
+        }
+        if(TwPassYr == "") {
+            document.getElementById("twPassYr").focus();
+        }
+        if(TwMark == "") {
+            document.getElementById("twMark").focus();
+        }
+    }
+
+    let TenMark = document.getElementById("tenMark").value;
+    let TenPer = TenMark/5;
+    let TenPassYr = document.getElementById("tenPassYr").value;
+    let TenSklName = document.getElementById("tenSklName").value;
+    document.getElementById("output12").innerHTML = "10 details";
+    if(TenMark == "" && TenPassYr == "" && TenSklName == "") {
+        document.getElementById("output3").innerHTML = "Details Not Entered";
+    }
+    else {
+        if(TenMark == ""){
+            document.getElementById("err1a").innerHTML = "Enter Marks.";
+            if(TenPassYr == ""){
+                document.getElementById("err1b").innerHTML = "Enter Passout Year.";
+            }
+            else if(TenSklName == ""){
+                document.getElementById("err1c").innerHTML = "Enter Institution Name.";
+            }
+        }
+        else if(TenPassYr == ""){
+            document.getElementById("err1b").innerHTML = "Enter Passout Year.";
+            document.getElementById("err1a").innerHTML = "";
+            if(TenSklName == ""){
+                document.getElementById("err1c").innerHTML = "Enter Institution Name.";
+                document.getElementById("err1a").innerHTML = "";
+            }
+        }
+        else if(TenSklName == ""){
+            document.getElementById("err1c").innerHTML = "Enter Institution Name.";
+            document.getElementById("err1a").innerHTML = "";
+            document.getElementById("err1b").innerHTML = "";
+        }
+        else{
+            document.getElementById("output3").innerHTML = "Total Marks : " + TenMark;
+            document.getElementById("output4").innerHTML = "Total Percentage : " + TenPer + "%";
+            document.getElementById("output5").innerHTML = "Year Passed Out : " + TenPassYr;
+            document.getElementById("output7").innerHTML = "School Name : " + TenSklName;
+            document.getElementById("err1a").innerHTML = "";
+            document.getElementById("err1b").innerHTML = "";
+            document.getElementById("err1c").innerHTML = "";
+        }
+        if(TenSklName == "") {
+            document.getElementById("tenSklName").focus();
+        }
+        if(TenPassYr == "") {
+            document.getElementById("tenPassYr").focus();
+        }
+        if(TenMark == "") {
+            document.getElementById("tenMark").focus();
+        }    
+    }
+
+    if(TenMark == "" && TenPassYr == "" && TenSklName == "" && TwMark == "" && TwPassYr == "" && TwSklName == "" && ClgMark == "" && ClgPassYr == "" && ClgName == ""){
+        document.getElementById("errg").innerHTML = "Enter Atleast One Field.";
+        document.getElementById("tenMark").focus();
+    }
+    else
+    {
+        document.getElementById("errg").innerHTML = "";
+    }
+
+    /*var ele = document.getElementsByName('gender');
+    for (i = 0; i < ele.length; i++) {               
+        if (ele[i].checked == false) {
+            document.getElementById("errf").innerHTML = "Invalid Input. Kindly Select Gender.";
+        }
+        else if (ele[i].checked) {
+            document.getElementById("output19").innerHTML = "Gender: " + ele[i].value;
+        }
+    }*/
+
+    var ele = document.getElementsByName('gender');
+    for (i = 0; i < ele.length; i++) {
+        if (ele[i].checked == false) {
+            document.getElementById("errf").innerHTML = "Invalid Input. Kindly Select Gender.";
+            // Focus is here. Search how to focus.
+        }
+    }
+    for (i = 0; i < ele.length; i++) {
+        if (ele[i].checked) {
+            document.getElementById("output19").innerHTML = "Gender: " + ele[i].value;
+            document.getElementById("errf").innerHTML = "";
+        }
+    }
+
+    const dateControl = document.getElementById("dob").value;
+    if(dateControl == ""){
+        document.getElementById("erre").innerHTML = "Invalid Input. Kindly Enter Date of Birth.";
+        document.getElementById("dob").focus();
+    }
+    else {
+        document.getElementById("output6").innerHTML = "DOB : " + dateControl;
+        document.getElementById("erre").innerHTML = "";
+    }    
+
+    let Code = document.getElementById("code").value;
+    let Number = document.getElementById("phNum").value;
+    if(Number == "" && Code == "[None Selected]") {
+        document.getElementById("errd").innerHTML = "Invalid Input. Kindly Resubmit Phone Number.";
+        document.getElementById("errc").innerHTML = "Invalid Input. Kindly Enter Country Code.";
+        document.getElementById("code").focus();
+    }
+    else if(Number<=999999999) {
+        document.getElementById("errd").innerHTML = "Invalid Input. Kindly Resubmit Phone Number.";
+        document.getElementById("phNum").focus();
+        document.getElementById("errc").innerHTML = "";
+    }
+    else if(Code == "[None Selected]") {
+        document.getElementById("errc").innerHTML = "Invalid Input. Kindly Enter Country Code.";
+        document.getElementById("code").focus();
+        document.getElementById("errd").innerHTML = "";
+    }
+    else {
+        document.getElementById("output2").innerHTML = "Phone Number : " + Code + " " + Number;
+        document.getElementById("errc").innerHTML = "";
+        document.getElementById("errd").innerHTML = "";
+    }
+
+    let FirName = document.getElementById("firstName").value;
+    let LstName = document.getElementById("lastName").value;
+    if(FirName == "" && LstName == "") {
+        document.getElementById("erra").innerHTML = "Invalid Input. Kindly Enter First Name.";
+        document.getElementById("errb").innerHTML = "Invalid Input. Kindly Enter Last Name.";
+        document.getElementById("firstName").focus();
+    }
+    else{
+        if(FirName == "") {
+            document.getElementById("erra").innerHTML = "Invalid Input. Kindly Enter First Name.";
+            document.getElementById("firstName").focus();
+            document.getElementById("errb").innerHTML = "";
+        }
+        else if(LstName == "") { 
+            document.getElementById("errb").innerHTML = "Invalid Input. Kindly Enter Last Name.";
+            document.getElementById("lastName").focus();
+            document.getElementById("erra").innerHTML = "";
+        }
+        else {
+            document.getElementById("output1").innerHTML = "Name : " + FirName + " " + LstName;
+            document.getElementById("erra").innerHTML = "";
+            document.getElementById("errb").innerHTML = "";
+        }
+    }
+}
+</script> 
+
+<style>
+    body {
+        background-color: #f3fafc;
+    }
+
+    .container { 
+        background: #dceff5;
+        opacity: 0.85;
+        margin: auto;
+        width: 700px;
+        /*height: 170;*/
+        border: 3px solid #05b9f0;
+        padding: 10px; 
+        border-radius: 10px;
+    }
+    table {
+        width: 100%;
+    }
+    .submit {
+        padding: 7px 40px;
+        border-radius: 5px;
+        border: 3px solid #05b9f0;
+        color: rgb(0, 0, 0);
+        margin: 0;
+        position: absolute;
+        top: 1280px;
+        left: 31%;
+        transform: translate(-50%, -50%);
+    }
+    .submit:hover {
+        background: #05b9f0;
+        color: white;
+    }
+    input[type=text] {
+        padding: 7px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #05b9f0;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type=date] {
+        padding: 7px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #05b9f0;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type=number] {
+        padding: 7px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #05b9f0;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type=tel] {
+        padding: 7px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #05b9f0;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type=text],select {
+        padding: 7px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #05b9f0;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+</style>
+
+</body>
+</html>
+
